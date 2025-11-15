@@ -1,6 +1,9 @@
 
 	components: {
 		nutrientesDoMeuPrato,
+	},
+	components: {
+		nutrientesDoMeuPrato,
 	},<template>
   <header class="relative bg-green-700 px-6 py-4 flex justify-between items-center shadow-md">
     <h1 class="text-xl font-bold text-green-50">Alimentação inteligente</h1>
@@ -24,8 +27,8 @@
     <!-- Menu mobile -->
     <nav v-if="isOpen" class="absolute top-full left-0 w-full bg-emerald-400 flex flex-col items-start px-6 py-4 md:hidden">
       <a href="#" class="py-1 hover:underline text-green-50">Sobre</a>
-      <a href="#" class="py-1 hover:underline text-green-50">Jogos</a>
-      <a href="#" class="py-1 hover:underline text-green-50">Nutrientes do meu prato</a>
+      <router-link to="/jogoDeAlimento">jogoss</router-link>
+      <router-link to="/nutrientesDoMeuPrato"> Nutrientes do meu prato</router-link>
     </nav>
   </header>
 </template>
