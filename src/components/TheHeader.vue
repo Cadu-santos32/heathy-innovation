@@ -1,12 +1,15 @@
-<template>
+
+	components: {
+		nutrientesDoMeuPrato,
+	},<template>
   <header class="relative bg-green-700 px-6 py-4 flex justify-between items-center shadow-md">
     <h1 class="text-xl font-bold text-green-50">Alimentação inteligente</h1>
 
     <!-- Menu desktop -->
     <nav class="hidden md:flex space-x-6 text-green-50">
       <a href="#" class="hover:underline">Sobre</a>
-      <a href="#" class="hover:underline">Jogos</a>
-      <a href="#" class="hover:underline">Nutrientes do meu prato</a>
+      <router-link to="/jogoDeAlimento">jogoss</router-link>
+      <router-link to="/nutrientesDoMeuPrato"> Nutrientes do meu prato</router-link>
     </nav>
 
     <!-- Botão mobile -->
@@ -28,6 +31,9 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router';
+import nutrientesDoMeuPrato from '@/view/nutrientesDoMeuPrato.vue'
+
 export default {
   data() {
     return {
